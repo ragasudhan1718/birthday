@@ -1,27 +1,31 @@
 window.addEventListener("load", () => {
   setTimeout(() => {
     const loader = document.getElementById("loader");
-    if (loader) loader.classList.add("hide");
+
+    if (loader) {
+      loader.classList.add("hide");
+    }
   }, 650);
 });
 
 const screens = document.querySelectorAll(".screen");
 
-function goToScreen(id) {
-  screens.forEach(screen => {
+function showScreen(id) {
+  screens.forEach((screen) => {
     screen.classList.remove("active");
   });
 
-  const nextScreen = document.getElementById(id);
+  const target = document.getElementById(id);
 
-  if (nextScreen) {
-    nextScreen.classList.add("active");
-    nextScreen.scrollTop = 0;
+  if (target) {
+    target.classList.add("active");
+    target.scrollTop = 0;
   }
 }
 
-document.querySelectorAll("[data-go]").forEach(button => {
+document.querySelectorAll("[data-next]").forEach((button) => {
   button.addEventListener("click", () => {
-    goToScreen(button.dataset.go);
+    const nextScreen = button.getAttribute("data-next");
+    showScreen(nextScreen);
   });
 });
