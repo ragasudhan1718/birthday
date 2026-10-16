@@ -3,88 +3,143 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#06110d">
 <title>Bujjikutty 💚</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="hearts" aria-hidden="true"></div>
+<div id="loader"><div class="loader-icon">💚</div><p>loading a little surprise...</p></div>
+<div class="grain"></div>
+<div class="floating-symbols"></div>
 
 <main>
-  <section class="hero screen active">
-    <div class="glow"></div>
-    <p class="tiny">A little something, made only for you</p>
-    <h1>Hey<br><span>Bujjikutty...</span> 💚</h1>
-    <p class="sub">Before you read anything,<br>just smile once. 🥺</p>
-    <button class="primary" data-next="intro">Open your surprise ✨</button>
-  </section>
+<section class="screen hero active" id="home">
+  <div class="orb orb-a"></div><div class="orb orb-b"></div>
+  <div class="hero-inner">
+    <p class="eyebrow">A LITTLE SURPRISE • 12:00 AM</p>
+    <div class="hero-heart">💚</div>
+    <h1>Hey<br><em>Bujjikutty...</em></h1>
+    <p class="hero-copy">Before you read anything,<br>just smile once. 🥺</p>
+    <button class="primary" data-next="intro">Open your surprise <b>✦</b></button>
+  </div>
+</section>
 
-  <section id="intro" class="screen">
-    <div class="card">
-      <p class="eyebrow">12:00 AM • YOUR DAY</p>
-      <h2>Happy Birthday<br><span>Bujjikutty</span> 💚</h2>
-      <p>இது உன்னோட 3rd birthday ✨💚 with me...</p>
-      <div class="line"></div>
-      <p class="small">நேர்ல வந்து surprise பண்ண முடியல...<br>அதனால கொஞ்சம் digital-ஆ வந்துட்டேன். 🫂</p>
-      <button class="primary" data-next="memories">There’s more... 💌</button>
-    </div>
-  </section>
+<section class="screen intro" id="intro">
+  <div class="glass">
+    <p class="eyebrow">YOUR DAY • OUR 3RD BIRTHDAY</p>
+    <div class="big03">03</div>
+    <h2>Happy Birthday<br><span>Bujjikutty</span> 💚</h2>
+    <p class="lead">இது உன்னோட 3rd birthday ✨💚 with me...</p>
+    <div class="divider">✦</div>
+    <p>நேர்ல வந்து surprise பண்ண முடியல...<br>அதனால கொஞ்சம் digital-ஆ வந்துட்டேன். 🫂</p>
+    <button class="primary" data-next="memories">Our memories <b>→</b></button>
+  </div>
+</section>
 
-  <section id="memories" class="screen">
+<section class="screen memories" id="memories">
+  <div class="section-heading">
     <p class="eyebrow">OUR LITTLE MEMORIES</p>
-    <h2>Some places are<br><span>just us. 💚</span></h2>
-    <div class="photo-grid">
-      <figure><img src="photo1.jpg" alt="Photo 1"><figcaption>Memory 01</figcaption></figure>
-      <figure><img src="photo2.jpg" alt="Photo 2"><figcaption>Memory 02</figcaption></figure>
-      <figure class="wide"><img src="photo3.jpg" alt="Photo 3"><figcaption>Memory 03</figcaption></figure>
-      <figure><img src="photo4.jpg" alt="Photo 4"><figcaption>Memory 04</figcaption></figure>
-      <figure><img src="photo5.jpg" alt="Photo 5"><figcaption>Memory 05</figcaption></figure>
-    </div>
-    <button class="ghost" data-next="letter">Read my letter →</button>
-  </section>
+    <h2>Some places are<br><em>just us.</em> 💚</h2>
+  </div>
+  <div class="photo-stack">
+    <figure><span>01</span><img src="photo1.jpg" alt="Our memory 1"><figcaption>one of my favourites</figcaption></figure>
+    <figure><span>02</span><img src="photo2.jpg" alt="Our memory 2"><figcaption>you & me</figcaption></figure>
+    <figure class="wide"><span>03</span><img src="photo3.jpg" alt="Our memory 3"><figcaption>a little memory</figcaption></figure>
+    <figure><span>04</span><img src="photo4.jpg" alt="Our memory 4"><figcaption>still makes me smile</figcaption></figure>
+    <figure><span>05</span><img src="photo5.jpg" alt="Our memory 5"><figcaption>always worth remembering</figcaption></figure>
+  </div>
+  <button class="ghost" data-next="letter">Read my letter ↓</button>
+</section>
 
-  <section id="letter" class="screen">
-    <div class="letter">
-      <p class="eyebrow">A LETTER FOR YOU</p>
-      <h2>Hi daa, 💚</h2>
-      <p>இது உன்னோட 3rd birthday ✨💚 with me... எப்போவும் உன் birthday kku முன்னாடியே எல்லா கிபிட்டும் பிளான் பண்ணி வெச்சிடுவன்...</p>
-      <p>One month முன்னாடி இருந்தே அதுக்கான process poitrukkum... Means எப்படி பண்ணலாம்.. என்ன பண்ணலாம் எப்படி அவளை surprise பண்ணலாம்.. அப்படின்னு process of thinking போய்கிட்டே இருக்கும்...</p>
-      <p>😄 அத கடைசி நேரத்துல அவசர அவசரமா பண்ணிக்கிட்டு மூட்ட முடிச்சிலாம் கட்டி எடுத்துக்கிட்டு கெளம்புறதுக்குள்ள 😂... அந்த gap la நீ வேற கண்டுபிடிக்க try பண்ணுவ... Cha அதுலாம் ஒரு சொகம்...</p>
-      <p>கஷ்டத்துலயும் (பஸ் kku வெயிட் பண்றது, பஸ் கிடைக்காம இருக்குறத சொன்னன்...) தப்பா எடுத்துக்கிட்டு ஆட வேண்டாம்...</p>
-      <p><b>புடிச்சவங்களுக்காக புடிச்ச விஷியத்த பண்றது தப்பில்ல, கஷ்டமாவும் தெரியாது...</b></p>
-      <p>உன்னோட சிரிப்புக்கும் நீ எப்படி surprise ஆகி “தங்கோ 💚” ன்னு சொல்வன்னு பாக்கவும் dhan🥺... சந்தோசமாகும்.</p>
-      <p>But நீ எனக்கு பண்ணத விடலாம் இது கம்மி டா...</p>
-      <div class="quote">“உன்னோட சிரிப்பை காண என்னோட ஒரு மொக்க கவிதை போதும்... ஆனால் எனக்கு அந்த சிரிப்பு இன்னும் ஸ்பெஷல் ஆக வேணும்... அதற்கு இதை தவிர எனக்கு வேறு வழி இல்லை ✨”</div>
-      <p class="wish">இனிய பிறந்தநாள் வாழ்த்துக்கள் டா அம்மு 💚✨🫂🥰♾️</p>
-      <button class="primary" data-next="prayers">One more thing... 🥺</button>
-    </div>
-  </section>
+<section class="screen letter-screen" id="letter">
+  <div class="letter">
+    <p class="eyebrow">A LETTER FOR YOU</p>
+    <h2>Hi daa, 💚</h2>
+    <p>இது உன்னோட 3rd birthday ✨💚 with me... எப்போவும் உன் birthday kku முன்னாடியே எல்லா கிபிட்டும் பிளான் பண்ணி வெச்சிடுவன்...</p>
+    <p>One month முன்னாடி இருந்தே அதுக்கான process poitrukkum... Means எப்படி பண்ணலாம்.. என்ன பண்ணலாம் எப்படி அவளை surprise பண்ணலாம்.. அப்படின்னு process of thinking போய்கிட்டே இருக்கும்...</p>
+    <p>😄 அத கடைசி நேரத்துல அவசர அவசரமா பண்ணிக்கிட்டு மூட்ட முடிச்சுலாம் கட்டி எடுத்துக்கிட்டு கெளம்புறதுக்குள்ள 😂... அந்த gap la நீ வேற கண்டுபிடிக்க try பண்ணுவ... Cha அதுலாம் ஒரு சொகம்...</p>
+    <p>கஷ்டத்துலயும் (பஸ் kku வெயிட் பண்றது, பஸ் கிடைக்காம இருக்குறத சொன்னன்...) தப்பா எடுத்துக்கிட்டு ஆட வேண்டாம்...</p>
+    <p class="strong">புடிச்சவங்களுக்காக புடிச்ச விஷியத்த பண்றது தப்பில்ல, கஷ்டமாவும் தெரியாது...</p>
+    <p>உன்னோட சிரிப்புக்கும் நீ எப்படி surprise ஆகி தங்கோ 💚 ன்னு சொல்வன்னு பாக்கவும் dhan🥺... சந்தோசமாகும்.</p>
+    <p>But நீ எனக்கு பண்ணத விடலாம் இது கம்மி டா...</p>
+    <div class="quote">“உன்னோட சிரிப்பை காண என்னோட ஒரு மொக்க கவிதை போதும்... ஆனால் எனக்கு அந்த சிரிப்பு இன்னும் ஸ்பெஷல் ஆக வேணும்... அதற்கு இதை தவிர எனக்கு வேறு வழி இல்லை ✨”</div>
+    <p class="wish">இனிய பிறந்தநாள் வாழ்த்துக்கள் டா அம்மு 💚✨🫂🥰♾️</p>
+    <button class="primary" data-next="doctor">One more little thing... 🥺</button>
+  </div>
+</section>
 
-  <section id="prayers" class="screen">
-    <div class="prayer-card">
-      <p class="eyebrow">MY WISH FOR YOU</p>
-      <p class="bigquote">“என்னோட prayers la நீ இல்லாம இருந்ததில்ல<br><span>என்னோட நினைவில் மட்டும் தவறுவாய்</span>”</p>
-      <div class="line"></div>
-      <p>“உன்னோட ஆசைகள், கனவு, லட்சியம் எல்லாமே நிறைவேறட்டும்”</p>
-      <p>இது என்னோட ஆசைமட்டுமல்ல...<br><b>என்னோட தினசரி வேண்டுதல்.</b> 💚</p>
-      <p>“முருகனிடம் கேட்டுப்பார்... உனக்காக எவளவு சண்டை, கோபம், கெஞ்சல் எடுத்துருப்பேன் என்று” 😊</p>
-      <button class="primary" data-next="final">Finally... 💚</button>
+<section class="screen doctor" id="doctor">
+  <div class="scene">
+    <p class="eyebrow">FOR MY DOCTOR 💚</p>
+    <div class="doctor-stage">
+      <div class="pulse-ring"></div>
+      <div class="stethoscope">♧</div>
+      <div class="cross">✚</div>
+      <div class="ecg"><span></span></div>
+      <div class="rx-card">
+        <div class="rx-head"><b>Rx</b><small>FOR BUJJIKUTTY</small></div>
+        <div class="rx-line"></div><div class="rx-line short"></div>
+        <strong>Prescription:</strong>
+        <p>1 dose of happiness<br>∞ doses of love</p>
+      </div>
     </div>
-  </section>
+    <h2>Doctor by profession.<br><em>My favourite person by heart.</em> 💚</h2>
+    <p>உன்னை பார்த்தாலே என் mood சரியாகிடும்...<br>அதுக்கு எந்த prescription-மும் தேவையில்லை. 🥺</p>
+    <button class="primary" data-next="creator">Now... your other side ✦</button>
+  </div>
+</section>
 
-  <section id="final" class="screen final">
-    <div class="confetti"></div>
-    <p class="tiny">FOR MY BUJJIKUTTY</p>
-    <h1>Very very<br><span>Happy Birthday</span></h1>
-    <p class="name">Bujjikutty 💚</p>
-    <p class="emoji">🥺 🥰 ✨ 🫂 ♾️</p>
-    <p class="final-note">Once again A very very very Happy birthday thango💚🥺🥰✨🥰🥰🥰</p>
-    <a class="song" href="https://youtu.be/RLzC55ai0eo?si=h08Wx3D7ZMH7aTmF" target="_blank" rel="noopener">🎵 Play our song</a>
-    <p class="tiny bottom">Made with too many thoughts, a little madness,<br>and a lot of love. 💚</p>
-  </section>
+<section class="screen creator" id="creator">
+  <div class="creator-scene">
+    <p class="eyebrow">FOR MY CONTENT CREATOR + EDITOR 🎬</p>
+    <div class="editor-window">
+      <div class="window-bar"><i></i><i></i><i></i><span>BUJJIKUTTY_EDIT.prj</span></div>
+      <div class="preview">
+        <div class="play">▶</div>
+        <div class="scan"></div>
+      </div>
+      <div class="timeline">
+        <div class="track t1"></div><div class="track t2"></div><div class="track t3"></div>
+        <b class="playhead"></b>
+      </div>
+      <div class="tool-row"><span>✂</span><span>◉</span><span>▣</span><span>↗</span><span>♪</span></div>
+    </div>
+    <h2>She creates.<br>She edits.<br><em>She makes moments memorable.</em> ✨</h2>
+    <p>உன் creative mind-ம், உன் dedication-ம்,<br>எனக்கு ரொம்ப பிடிக்கும். 💚</p>
+    <button class="primary" data-next="prayers">And one thing I always pray for... <b>→</b></button>
+  </div>
+</section>
+
+<section class="screen prayers" id="prayers">
+  <div class="prayer-wrap">
+    <p class="eyebrow">MY WISH FOR YOU</p>
+    <div class="prayer-quote">
+      <div>“என்னோட prayers la நீ<br>இல்லாம இருந்ததில்ல”</div>
+      <strong>“நினைவில் மட்டும் எப்படி தவறுவாய்”</strong>
+    </div>
+    <div class="divider">✦</div>
+    <p>“உன்னோட ஆசைகள், கனவு, லட்சியம் எல்லாமே நிறைவேறட்டும்”</p>
+    <p>இது என்னோட ஆசைமட்டுமல்ல...<br><b>என்னோட தினசரி வேண்டுதல்.</b> 💚</p>
+    <p>“முருகனிடம் கேட்டுப்பார்... உனக்காக எவளவு சண்டை, கோபம், கெஞ்சல் எடுத்துருப்பேன் என்று” 😊</p>
+    <button class="primary" data-next="final">Finally... <b>✦</b></button>
+  </div>
+</section>
+
+<section class="screen final" id="final">
+  <div class="final-glow"></div>
+  <div class="confetti"></div>
+  <p class="eyebrow">FOR MY BUJJIKUTTY</p>
+  <div class="final-heart">💚</div>
+  <h1>Very very<br><em>Happy Birthday</em></h1>
+  <p class="name">Bujjikutty</p>
+  <p class="emoji">🥺 🥰 ✨ 🫂 ♾️</p>
+  <p class="final-note">Once again A very very very Happy birthday thango💚🥺🥰✨🥰🥰🥰</p>
+  <a class="song" href="https://youtu.be/RLzC55ai0eo?si=h08Wx3D7ZMH7aTmF" target="_blank" rel="noopener">🎵 Play our song</a>
+  <p class="tiny bottom">Made with too many thoughts,<br>a little madness, and a lot of love. 💚</p>
+</section>
 </main>
-
 <script src="script.js"></script>
 </body>
 </html>
